@@ -13,12 +13,12 @@ To ensure reliability and performance monitoring, the service is instrumented to
 
 ## Project Members
 
-- Mahmoud Hesham
-- Abdelrahman Ahmed
-- Youssef Salah
-- Bishoy Ayman
-- Ahmed Abdelaal
-- Ali Sayed
+- **[Mahmoud Hesham](https://github.com/mahmoudhesham-gad)** - Backend & Monitoring
+- **[Ahmed Abdelaal](https://github.com/ahmed-226)** - Backend & Monitoring
+- **[Youssef Salah](https://github.com/youssefsalah9)** - Kubernetes Deployment
+- **[Ali Sayed](https://github.com/alisayed-20)** - Kubernetes Deployment
+- **[Bishoy Ayman](https://github.com/Bishoy77)** - Monitoring
+- **[Abdelrahman Ahmed](https://github.com/AbdoViper23)** - Kubernetes Deployment
 
 ## Technologies Used
 
