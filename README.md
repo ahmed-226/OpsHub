@@ -11,7 +11,7 @@ The URL shortener allows users to:
 
 To ensure reliability and performance monitoring, the service is instrumented to expose custom metrics. These metrics are collected by Prometheus and visualized using Grafana. The entire stack is orchestrated using Kubernetes, making it scalable and resilient. It can be run locally using a cluster like Minikube or Docker Desktop Kubernetes.
 
-Team Drive : https://docs.google.com/spreadsheets/d/1XycL96p0Q6XzlMcqmLNFLoG6f6s_KYVLmsklgZRa-ec/edit?usp=drivesdk 
+Drive : https://docs.google.com/spreadsheets/d/1XycL96p0Q6XzlMcqmLNFLoG6f6s_KYVLmsklgZRa-ec/edit?usp=drivesdk 
 
 ## Project Members
 
