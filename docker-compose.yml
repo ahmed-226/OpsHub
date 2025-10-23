@@ -1,0 +1,15 @@
+services:
+  url-shortener:
+    build: .
+    container_name: url-shortener-service
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DB_FILE=/app/data/url_shortener.db
+    volumes:
+      - url_shortener_data:/app/data
+
+volumes:
+  url_shortener_data:
+    driver: local

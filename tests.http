@@ -1,0 +1,46 @@
+@baseUrl = http://localhost:3000
+
+### Test 1: Create Short URL - Valid HTTPS
+POST {{baseUrl}}/shorten
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.google.com"
+}
+
+### Test 2: Create Short URL - Valid HTTP
+POST {{baseUrl}}/shorten
+Content-Type: application/json
+
+{
+  "originalUrl": "http://www.example.com"
+}
+
+### Test 3: Create Short URL - Invalid URL
+POST {{baseUrl}}/shorten
+Content-Type: application/json
+
+{
+  "originalUrl": "https://www.example.com/very/long/path/to/some/resource"
+}
+
+### Test 4: Test Redirect (replace 'SHORT_CODE_HERE' with actual shortCode from previous responses)
+GET {{baseUrl}}/4p7yvAEi2S8SD8qoL84dmk
+
+### Test 5: Error - Missing originalUrl
+POST {{baseUrl}}/shorten
+Content-Type: application/json
+
+{
+}
+
+### Test 6: Error - Invalid URL format
+POST {{baseUrl}}/shorten
+Content-Type: application/json
+
+{
+  "originalUrl": "www.google.com"
+}
+
+### Test 7: Error - Non-existent short code
+GET {{baseUrl}}/nonexistent123
