@@ -1,6 +1,5 @@
 const short = require('short-uuid');
 const Url = require('../models/url.model');
-const { httpRedirectsTotal, httpShortensTotal, httpShortenFailuresTotal } = require('../monitoring/metrics');
 const redisClient = require('../config/redis');
 
 const handleCreateShortUrl = async (req, res) => {

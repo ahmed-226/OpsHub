@@ -1,8 +1,4 @@
-module.exports = {
-    incrementRequestCount: function() {
-    },
-    recordResponseTime: function(startTime) {
-    },
-    getMetrics: function() {
-    }
-};
+const { collectDefaultMetrics } = require('prom-client');
+
+module.exports = collectDefaultMetrics();
+
